@@ -1,5 +1,6 @@
-export { default as Bio } from "./Bio";
+export { default as FLights } from "./Flights";
 export { default as Home } from "./Home";
-export { default as Order } from "./Order";
-export { default as Pizza } from "./Pizza";
+export { default as Eats } from "./Eats";
+export { default as Entertainment } from "./Entertainment";
+export { default as Sleep } from "./Sleep";
 export { default as Links } from "./Links";

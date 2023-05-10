@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default state => html`
   <section class="header">
-    <nav>
+    <!-- <nav>
       <a href="Week4Homework.html"><img src="https://image.pngaaa.com/685/10685-middle.png"></a>
       <div class="nav">
         <ul>
@@ -13,7 +13,7 @@ export default state => html`
           <li><a href="">SLEEP</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
     <div class="text-box">
       <h1>Flight Eat Entertainment Sleep</h1>
