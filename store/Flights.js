@@ -1,4 +1,4 @@
 export default {
-  header: "All about me!",
+  header: "Where To ?",
   view: "Flights"
 };
