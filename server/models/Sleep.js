@@ -9,20 +9,15 @@ const sleepSchema = new mongoose.Schema({
   state: {
     type: String,
     required: true
-    // enum: ["thin", "chicago", "deep-dish", "hella-thick"]
+    // enum: ["United States", "Florida", "Orlando"]
   },
   city: {
     type: String,
     validate: /^[A-Za-z0-9 ]*$/
   },
-  town: {
-    type: String,
-    required: true,
-    validate: /^[A-Za-z0-9 ]*$/
-  },
-  street: [String]
+  reviews: [String]
 });
 
-const Sleep = mongoose.model("Pizza", sleepSchema);
+const Sleep = mongoose.model("Sleep", sleepSchema);
 
 module.exports = Sleep;

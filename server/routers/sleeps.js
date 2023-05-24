@@ -7,8 +7,7 @@ const router = Router();
 router.post("/", (request, response) => {
   const newSleep = new Sleep(request.body);
   newSleep.save((error, record) => {
-    if (error.name && error.name === "ValidationError")
-      return response.status(400).json(error.errors);
+    if (error?.name === 'ValidationError') return response.status(400).json(error.errors);
     if (error) return response.status(500).json(error.errors);
 
     response.json(record);
