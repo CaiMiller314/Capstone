@@ -4,3 +4,4 @@ export { default as Eats } from "./Eats";
 export { default as Entertainment } from "./Entertainment";
 export { default as Sleep } from "./Sleep";
 export { default as Links } from "./Links";
+export { default as Reviews } from "./Reviews";
