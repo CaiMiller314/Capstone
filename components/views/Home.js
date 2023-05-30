@@ -23,24 +23,24 @@ export default state => html`
   </section>
   <section class="reviews">
     <h1>Customer Reviews</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
 
-    <div class="row">
+    <div class="row1">
         <div class="reviews-color">
           <h3>Flights</h3>
           <p> ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
     </div>
-    <div class="row">
+    <div class="row2">
         <div class="reviews-color">
           <h3>Eats</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
     </div>
-    <div class="row">
+    <div class="row3">
         <div class="reviews-color">
           <h3>Entertainment</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
     </div>
-    <div class="row">
+    <div class="row4">
         <div class="reviews-color">
           <h3>Sleep</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>

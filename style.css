@@ -78,10 +78,50 @@ position: relative;
 cursor: pointer;
 }
 .button:hover {
-border: 1px solid #f44336;
-background: #f44336;
-transition: .05s;
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 0.5s;
 }
+#flights {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Airplane-HD-Wallpapers-Free.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  }
+
+  .text-box1{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    }
+    .selections {
+      width: 90%;
+      color: #fff;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      font-size: 25px;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      }
+
+      .info1 {
+        width: 90%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 25px;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        }
+
 
 @media(max-width: 700px){
 .text-box h1{
@@ -119,6 +159,8 @@ width: 80%;
 margin: auto;
 text-align: center;
 padding-top: 100px;
+justify-content: space-between;
+
 }
 h1{
   font-size: 36px;
@@ -130,16 +172,39 @@ p{
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
-  padding: 10px;
+  padding: 25px;
 }
 
-.row{
-  margin-top: 5%;
+.row1{
+  margin: auto;
   display: flex;
+  justify-content: space-between;
 
+}
+
+.row2{
+  margin: auto;
+  display: flex;
   justify-content: space-between;
 }
 
+.row3{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row4{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row4:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: .05s;
+  }
 @media (max-width: 549px){
   .hidden--mobile {
     display: none !important;
