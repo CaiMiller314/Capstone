@@ -2,15 +2,51 @@ import html from "html-literal";
 
 export default () => html`
   <section id="flights">
-    <h2>Airlines</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra. Nunc pharetra lacinia arcu sit amet dignissim. Pellentesque ut mi nulla.</p>
-    <p>Quisque at hendrerit libero, eget interdum lectus. Etiam facilisis leo nulla, sit amet imperdiet nunc molestie vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur consectetur felis a purus volutpat, sed finibus magna iaculis. Pellentesque tristique tristique turpis nec vehicula. Maecenas varius quis tellus id mollis. Vivamus ut ultrices ligula.</p>
-    <p>Etiam egestas consectetur gravida. Nulla mollis suscipit sapien sed fermentum. Integer vitae eros a magna vulputate aliquam. Suspendisse sed pulvinar augue, auctor mollis lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis eleifend diam quis libero sollicitudin efficitur. Nullam sapien eros, tempor eget vulputate ut, interdum vel orci. Donec sit amet tempor mi. Nam feugiat cursus egestas. Suspendisse eget orci et ex mattis ornare tempor non tellus. Suspendisse gravida neque in urna congue bibendum. Duis dui odio, pharetra nec odio ac, ornare vulputate nibh.</p>
+  <div class="text-box1">
+      <h1>F E E S</h1>
+    </div>
+  <div class="selections">
+  <label for="choices">Choose a Airline:</label>
+<select name="choices" id="choices">
+  <option value="Southwest">Southwest</option>
+  <option value="Spirit">Spirit</option>
+  <option value="American">American</option>
+  <option value="Delta">Delta</option>
+</select>
+</div>
+<div class="info1">
+<form action="/action_page.php">
+  <label for="depart">Depart</label><br>
+  <input type="text" id="depart" name="depart" value="From"><br>
+  <label for="arrive">Arrive</label><br>
+  <input type="text" id="arrive" name="arrive" value="To"><br><br>
+  <input type="button" value="Search">
+</form>
+</div>
+  </section>
+  <section class="reviews">
+    <h1>Customer Reviews</h1>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
 
-    <h2>Pricing</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra. Nunc pharetra lacinia arcu sit amet dignissim. Pellentesque ut mi nulla.</p>
-    <p>Quisque at hendrerit libero, eget interdum lectus. Etiam facilisis leo nulla, sit amet imperdiet nunc molestie vel. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur consectetur felis a purus volutpat, sed finibus magna iaculis. Pellentesque tristique tristique turpis nec vehicula. Maecenas varius quis tellus id mollis. Vivamus ut ultrices ligula.</p>
-    <p>Etiam egestas consectetur gravida. Nulla mollis suscipit sapien sed fermentum. Integer vitae eros a magna vulputate aliquam. Suspendisse sed pulvinar augue, auctor mollis lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis eleifend diam quis libero sollicitudin efficitur. Nullam sapien eros, tempor eget vulputate ut, interdum vel orci. Donec sit amet tempor mi. Nam feugiat cursus egestas. Suspendisse eget orci et ex mattis ornare tempor non tellus. Suspendisse gravida neque in urna congue bibendum. Duis dui odio, pharetra nec odio ac, ornare vulputate nibh.</p>
-
+    <div class="row1">
+        <div class="reviews-color">
+          <h3>Southwest Airlines</h3>
+          <p> ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
+    </div>
+    <div class="row2">
+        <div class="reviews-color">
+          <h3>Spirit Airlines</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
+    </div>
+    <div class="row3">
+        <div class="reviews-color">
+          <h3>American Airlines</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
+    </div>
+    <div class="row4">
+        <div class="reviews-color">
+          <h3>Delta Airlines</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
+    </div>
   </section>
 `;
