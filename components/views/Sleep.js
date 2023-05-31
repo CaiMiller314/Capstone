@@ -6,7 +6,7 @@ export default state => html`
       <th>City</th>
       <th>State</th>
     </tr>
-    ${state.sleeps
+    ${state.hotels
       .map(sleep => {
         return `<tr><td>${sleep.country}</td><td>${sleep.state}</td><td>${sleep.city}`;
       })

@@ -31,20 +31,11 @@ function afterRender(state) {
       const inputList = event.target.elements;
       console.log("Input Element List", inputList);
 
-      // const toppings = [];
-      // // Interate over the toppings input group elements
-      // for (let input of inputList.toppings) {
-      //   // If the value of the checked attribute is true then add the value to the toppings array
-      //   if (input.checked) {
-      //     toppings.push(input.value);
-      //   }
-      // }
-
       const requestData = {
         customer: inputList.customer.value,
         crust: inputList.country.value,
         cheese: inputList.state.value,
-        sauce: inputList.city.value,
+        sauce: inputList.city.value
         // toppings: toppings
       };
       console.log("request Body", requestData);
@@ -104,10 +95,10 @@ router.hooks({
       case "Sleep":
         // New Axios get request utilizing already made environment variable
         axios
-          .get(`https://sc-pizza-api.onrender.com/pizzas`)
+          .get(`https://capstoneflyapiofficial.onrender.com/sleeps`)
           .then(response => {
             // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
-            console.log("response", response);
+            console.log("response", response.data);
             store.Sleep.hotels = response.data;
             done();
           })
