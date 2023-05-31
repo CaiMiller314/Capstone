@@ -20,9 +20,9 @@ export default () => html`
       <div>
         <label for="review1">Review:</label>
         <input
-          type="review1"
-          name="review1"
-          id="review1"
+          type="text"
+          name="feedback"
+          id="feedback"
           placeholder="Leave a Review"
           required
         />

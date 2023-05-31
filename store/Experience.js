@@ -1,4 +1,6 @@
 export default {
   header: "Browse Customer Experiences!",
-  view: "Experience"
+  view: "Experience",
+  airline: [],
+  csx: ""
 };
