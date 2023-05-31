@@ -24,37 +24,34 @@ function afterRender(state) {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
 
-  if (state.view === "Reviews") {
+  if (state.view === "Experience") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
 
       const inputList = event.target.elements;
       console.log("Input Element List", inputList);
 
-      // const toppings = [];
-      // // Interate over the toppings input group elements
-      // for (let input of inputList.toppings) {
-      //   // If the value of the checked attribute is true then add the value to the toppings array
-      //   if (input.checked) {
-      //     toppings.push(input.value);
-      //   }
-      // }
+      const airline = [];
+      // Interate over the airline input group elements
+      for (let input of inputList.airline) {
+        // If the value of the checked attribute is true then add the value to the airline array
+        if (input.checked) {
+          airline.push(input.value);
+        }
+      }
 
       const requestData = {
-        customer: inputList.customer.value,
-        crust: inputList.country.value,
-        cheese: inputList.state.value,
-        sauce: inputList.city.value,
-        // toppings: toppings
+        airline: inputList.airline.value,
+        feedback: inputList.feedback.value
       };
       console.log("request Body", requestData);
 
       axios
-        .post(`${process.env.PIZZA_PLACE_API_URL}/pizzas`, requestData)
+        .post(`${process.env.REVIEWS_API_URL}/experiences`, requestData)
         .then(response => {
           // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
-          store.Pizza.pizzas.push(response.data);
-          router.navigate("/Pizza");
+          store.Experience.experiences.push(response.data);
+          router.navigate("/Experience");
         })
         .catch(error => {
           console.log("It puked", error);
@@ -104,11 +101,26 @@ router.hooks({
       case "Sleep":
         // New Axios get request utilizing already made environment variable
         axios
-          .get(`https://sc-pizza-api.onrender.com/pizzas`)
+          .get(`https://capstoneflyapiofficial.onrender.com/sleeps`)
           .then(response => {
             // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
-            console.log("response", response);
+            console.log("response", response.data);
             store.Sleep.hotels = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It puked", error);
+            done();
+          });
+        break;
+      case "Experience":
+        // New Axios get request utilizing already made environment variable
+        axios
+          .get(`https://capstoneflyapiofficial.onrender.com/sleeps`)
+          .then(response => {
+            // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
+            console.log("response", response.data);
+            store.Experience.airline.csx = response.data;
             done();
           })
           .catch(error => {
