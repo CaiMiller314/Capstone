@@ -21,19 +21,12 @@ export default () => html`
         <label for="review1">Review:</label>
         <input
           type="text"
-          name="feedback"
-          id="feedback"
+          name="reviews"
+          id="reviews"
           placeholder="Leave a Review"
           required
         />
       </div>
-      <input
-        type="hidden"
-        name="airline"
-        id="airline"
-        value="<Select Airline>"
-      />
-      <input type="hidden" name="review" id="review" value="<Enter Review>" />
       <input type="submit" name="submit" value="Submit Review" />
     </form>
   </section>

@@ -2,18 +2,6 @@ import html from "html-literal";
 
 export default state => html`
   <section class="header">
-    <!-- <nav>
-      <a href="Week4Homework.html"><img src="https://image.pngaaa.com/685/10685-middle.png"></a>
-      <div class="nav">
-        <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">FLIGHTS</a></li>
-          <li><a href="">EATS</a></li>
-          <li><a href="">ENTERTAINMENT</a></li>
-          <li><a href="">SLEEP</a></li>
-        </ul>
-      </div>
-    </nav> -->
 
     <div class="text-box">
       <h1>Flight Eat Entertainment Sleep</h1>

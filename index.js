@@ -42,12 +42,12 @@ function afterRender(state) {
 
       const requestData = {
         airline: inputList.airline.value,
-        feedback: inputList.feedback.value
+        reviews: inputList.reviews.value
       };
       console.log("request Body", requestData);
 
       axios
-        .post(`${process.env.REVIEWS_API_URL}/experiences`, requestData)
+        .post(`${process.env.EXPERIENCE_API_URL}/experiences`, requestData)
         .then(response => {
           // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
           store.Experience.experiences.push(response.data);
@@ -116,7 +116,7 @@ router.hooks({
       case "Experience":
         // New Axios get request utilizing already made environment variable
         axios
-          .get(`https://capstoneflyapiofficial.onrender.com/sleeps`)
+          .get(`https://capstoneflyapi2.onrender.com/experiences`)
           .then(response => {
             // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
             console.log("response", response.data);
