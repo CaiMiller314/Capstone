@@ -6,7 +6,7 @@ export default state => html`
     <div class="text-box">
       <h1>Flight Eat Entertainment Sleep</h1>
       <p>All of your traveling needs in one place! There has never been a better place to satisfy your trip's vision.</p>
-      <a href="http://localhost:1234/Flights" class="button">GET STARTED</a>
+      <a href="https://cool-daffodil-15f8ee.netlify.app/Flights" class="button">GET STARTED</a>
     </div>
   </section>
   <section class="reviews">
