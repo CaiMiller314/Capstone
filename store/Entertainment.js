@@ -1,4 +1,4 @@
-export default {
-  header: "Nearby Attractions",
-  view: "Entertainment"
-};
+// export default {
+//   header: "Nearby Attractions",
+//   view: "Entertainment"
+// };

@@ -22,6 +22,8 @@ export default () => html`
   <input type="text" id="arrive" name="arrive" value="To"><br><br>
   <input type="button" value="Search">
 </form>
+<form>
+</form>
 </div>
   </section>
   <section class="reviews">
