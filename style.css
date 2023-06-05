@@ -13,7 +13,10 @@ position: relative;
 }
 nav{
 display: flex;
-padding: 2% 6%;
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+/* padding: 2% 6%; */
 justify-content: space-between;
 align-items: center;
 }
@@ -78,38 +81,38 @@ position: relative;
 cursor: pointer;
 }
 .button:hover {
-  border: 1px solid #f44336;
-  background: #f44336;
-  transition: 0.5s;
+border: 1px solid #f44336;
+background: #f44336;
+transition: 0.5s;
 }
 #flights {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Airplane-HD-Wallpapers-Free.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  }
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Airplane-HD-Wallpapers-Free.jpg);
+background-position: center;
+background-size: cover;
+position: relative;
+}
 
-  .text-box1{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: left;
-    }
-    .selections {
-      width: 90%;
-      color: #fff;
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      font-size: 25px;
-      transform: translate(-50%,-50%);
-      text-align: center;
-      }
+.text-box1{
+width: 90%;
+color: #fff;
+position: absolute;
+top: 5%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: left;
+}
+.selections {
+width: 90%;
+color: #fff;
+position: absolute;
+top: 25%;
+left: 50%;
+font-size: 25px;
+transform: translate(-50%,-50%);
+text-align: center;
+}
 
       .info1 {
         width: 90%;
@@ -138,6 +141,25 @@ cursor: pointer;
             background-position: center;
             background-size: cover;
             position: relative;
+            }
+
+            #eats {
+              min-height: 100vh;
+              width: 100%;
+              font-family: "Courier New", Courier, monospace;
+              background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://image.cnbcfm.com/api/v1/image/107140357-1666712129286-2017-10-17T124302Z_1759208219_RC1D025A4F30_RTRMADP_3_BOMBARDIER-AIRBUS-CSERIES.JPG?v=1666716984&w=1920&h=1080);
+              background-position: center;
+              background-size: cover;
+              position: relative;
+            }
+            .middle {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              font-size: 35px;
+              color: #fff;
+              transform: translate(-50%, -50%);
+              text-align: center;
             }
 @media(max-width: 700px){
 .text-box h1{
