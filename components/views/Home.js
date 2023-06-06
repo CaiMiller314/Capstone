@@ -16,7 +16,7 @@ export default state => html`
     <div class="row1">
         <div class="reviews-color">
           <h3>Flights</h3>
-          <p> ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sagittis nulla. Etiam semper mauris a quam tempus, non feugiat massa posuere. Morbi vitae nisi aliquam, semper diam id, molestie leo. In hac habitasse platea dictumst. Nulla et enim vel elit dictum viverra.</p>
     </div>
     <div class="row2">
         <div class="reviews-color">

@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default () => html`
+export default state => html`
   <section id="flights">
   <div class="text-box1">
       <h1>F E E S</h1>
@@ -26,6 +26,11 @@ export default () => html`
 </form>
 </div>
   </section>
+  <h3>
+    The weather in ${state.weather.city} is ${state.weather.description}.
+    Temperature is ${state.weather.temp}F, and it feels like
+    ${state.weather.feelsLike}F.
+  </h3>
   <section class="reviews">
     <h1>Customer Reviews</h1>
     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->

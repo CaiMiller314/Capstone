@@ -59,6 +59,7 @@ function afterRender(state) {
     });
   }
 }
+
 router.hooks({
   before: (done, params) => {
     const view =
@@ -98,21 +99,21 @@ router.hooks({
             done();
           });
         break;
-      case "Sleep":
-        // New Axios get request utilizing already made environment variable
-        axios
-          .get(`https://capstoneflyapiofficial.onrender.com/sleeps`)
-          .then(response => {
-            // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
-            console.log("response", response.data);
-            store.Sleep.hotels = response.data;
-            done();
-          })
-          .catch(error => {
-            console.log("It puked", error);
-            done();
-          });
-        break;
+      // case "Sleep":
+      //   // New Axios get request utilizing already made environment variable
+      //   axios
+      //     .get(`https://capstoneflyapiofficial.onrender.com/sleeps`)
+      //     .then(response => {
+      //       // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
+      //       console.log("response", response.data);
+      //       store.Sleep.hotels = response.data;
+      //       done();
+      //     })
+      //     .catch(error => {
+      //       console.log("It puked", error);
+      //       done();
+      //     });
+      //   break;
       case "Experience":
         // New Axios get request utilizing already made environment variable
         axios
