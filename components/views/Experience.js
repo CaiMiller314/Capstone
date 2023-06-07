@@ -27,7 +27,7 @@ export default () => html`
           required
         />
       </div>
-      <input type="submit" id="newSubmit" value="Submit Review"/>
+      <input type="submit" name="submit" value="Submit Review"/>
     </form>
   </section>
 `;

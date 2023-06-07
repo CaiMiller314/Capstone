@@ -65,10 +65,10 @@ router.hooks({
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
-        : "Home";
+        : "Flights";
     // Add a switch case statement to handle multiple routes
     switch (view) {
-      case "Home":
+      case "Flights":
         axios
           // Get request to retrieve the current weather data using the API key and providing a city name
           .get(
@@ -79,7 +79,7 @@ router.hooks({
             const kelvinToFahrenheit = kelvinTemp =>
               Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
             // Create an object to be stored in the Home state from the response
-            store.Home.weather = {
+            store.Flights.weather = {
               city: response.data.name,
               temp: kelvinToFahrenheit(response.data.main.temp),
               feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
